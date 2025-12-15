@@ -53,10 +53,10 @@ class ODHBack {
 
         switch (options.enabled) {
             case false:
-                chrome.browserAction.setBadgeText({ text: 'off' });
+                chrome.action.setBadgeText({ text: 'off' });
                 break;
             case true:
-                chrome.browserAction.setBadgeText({ text: '' });
+                chrome.action.setBadgeText({ text: '' });
                 break;
         }
         this.tabInvokeAll('setFrontendOptions', {
